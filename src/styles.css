@@ -1,0 +1,6 @@
+/* importo los css de bootstrap que instale con npm */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #fafafa;
+}
