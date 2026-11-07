@@ -1,0 +1,9 @@
+<h4>Libros para leer</h4>
+<p class="text-muted">Hay {{ libros.length }} libros en la lista.</p>
+
+<ul class="list-group mb-3">
+  <li class="list-group-item" *ngFor="let libro of libros">
+    <strong>{{ libro.titulo }}</strong>
+    <span class="text-muted"> - {{ libro.autor }}</span>
+  </li>
+</ul>
