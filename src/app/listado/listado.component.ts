@@ -12,4 +12,15 @@ export class ListadoComponent {
     { titulo: 'Cien años de soledad', autor: 'Gabriel Garcia Marquez' },
     { titulo: 'Clean Code', autor: 'Robert Martin' }
   ];
+
+  // recibo los valores del formulario con las variables de plantilla (#)
+  agregar(titulo: string, autor: string) {
+    if (titulo === '' || autor === '') {
+      alert('Completa el titulo y el autor');
+      return;
+    }
+
+    this.libros.push({ titulo: titulo, autor: autor });
+    console.log('libros ahora:', this.libros);
+  }
 }

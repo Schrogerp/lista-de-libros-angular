@@ -7,3 +7,17 @@
     <span class="text-muted"> - {{ libro.autor }}</span>
   </li>
 </ul>
+
+<form (submit)="agregar(titulo.value, autor.value); titulo.value=''; autor.value=''">
+  <div class="row g-2">
+    <div class="col-sm-5">
+      <input #titulo type="text" class="form-control" placeholder="Titulo del libro">
+    </div>
+    <div class="col-sm-5">
+      <input #autor type="text" class="form-control" placeholder="Autor">
+    </div>
+    <div class="col-sm-2">
+      <button type="submit" class="btn btn-primary w-100">Agregar</button>
+    </div>
+  </div>
+</form>
