@@ -8,7 +8,7 @@
   </li>
 </ul>
 
-<form (submit)="agregar(titulo.value, autor.value); titulo.value=''; autor.value=''">
+<form (ngSubmit)="agregar(titulo.value, autor.value); titulo.value=''; autor.value=''">
   <div class="row g-2">
     <div class="col-sm-5">
       <input #titulo type="text" class="form-control" placeholder="Titulo del libro">
