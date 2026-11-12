@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre = 'Schroger';
+  nombre = 'Edgar';
   descripcion = 'Mi primera aplicación en Angular. Es una lista de los libros que quiero leer este año.';
 }
